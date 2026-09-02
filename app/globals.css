@@ -25,6 +25,58 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-family: "Hanken Grotesk", "Hanken Grotesk Fallback";
+main {
+  background: radial-gradient(
+    circle at 50% 30%,
+    #30343a 0%,
+    #000000 100%
+  )
+}
+
+.pulsating-circle {
+  /* Główna kropka – statyczna */
+  width: 1.5em;
+  height: 1.5em;
+  background-image: radial-gradient(circle, #6ad945, #4ad945 66%, transparent 66%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative; /* potrzebne do pozycjonowania pseudo-elementu */
+  border-radius: 50%; /* dla bezpieczeństwa – okrąg */
+}
+
+.pulsating-circle::before {
+  content: "";
+  position: absolute;
+  top: -0.25em;   /* dopasuj, aby pierścień był większy od kropki */
+  left: -0.25em;
+  width: 2em;     /* 1.5em + 2*0.25em = 2em */
+  height: 2em;
+  border-radius: 50%;
+  border: 2px solid #6ad945;
+  box-sizing: border-box;
+  animation: pulsating-ripple 2s ease-out infinite;
+}
+
+@keyframes pulsating-ripple {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.8); /* lub inna wartość */
+  }
+}
+
+.main-text {
+  font-family: monospace; /* to change? */
+  font-size: 3.1rem;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3); /* to change */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bottom-text {
+  font-size: 1.02rem;
 }

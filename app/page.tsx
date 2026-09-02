@@ -6,18 +6,22 @@ export default function Home() {
       <header>
         header
       </header>
-      <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-        <div className="flex flex-row justify-center bg-amber-100 w-screen">
-          <div className="flex flex-col bg-amber-800 w-xl">
-            <h1>
+      <main className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
+        <div className="flex flex-row justify-center  w-screen">
+          <div className="flex flex-col w-xl">
+            <div className="flex">
+              <div className="pulsating-circle"></div>
+              <div>Available???</div>
+            </div>
+            <h1 className="main-text">
               <div>I love to create applications that people use</div>
               <div>Wenomeshinasama</div>
               <div>Tomaharbisau</div>
               <div>Wifenlof eser lifterbraun</div>
             </h1>
-            <p>I build commerce apps</p>
+            <p className="bottom-text">I build commerce apps</p>
           </div>
-          <div className="flex bg-amber-600 w-xl">
+          <div className="flex  w-xl">
             <h1>
               [dopamine]
             </h1>
@@ -29,7 +33,7 @@ export default function Home() {
         <div className="">
 
         </div>
-      </div>
+      </main>
     </>
   );
 }
