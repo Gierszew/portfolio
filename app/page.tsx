@@ -1,6 +1,28 @@
+"use client"
+
 import Image from "next/image";
+import { MouseEvent, useRef } from "react";
 
 export default function Home() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const followCursorPosition = function (e: MouseEvent) {
+    const container = containerRef.current;
+    console.log(container);
+    if (!container) return;
+
+    const rect = container.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+
+    const clampedX = Math.min(1, Math.max(0, x));
+    const clampedY = Math.min(1, Math.max(0, y));
+
+    container.style.setProperty("--x", clampedX.toString());
+    container.style.setProperty("--y", clampedY.toString());
+
+    console.log(x);
+  }  
   return (
     <>
       <header>
@@ -14,12 +36,30 @@ export default function Home() {
               <div>Available???</div>
             </div>
             <h1 className="main-text">
-              <div>I love to create applications that people use</div>
-              <div>Wenomeshinasama</div>
-              <div>Tomaharbisau</div>
-              <div>Wifenlof eser lifterbraun</div>
+              <div>I love to create applications </div>
+              <div>that people use</div>
             </h1>
-            <p className="bottom-text">I build commerce apps</p>
+            <p className="bottom-text mt-11">
+              I build full stack
+              <em> applications </em> and
+              <em> web applications </em>
+              
+              that people use
+            </p>
+            <div className="relative flex flex-row">
+              <div onMouseMove={(e) => followCursorPosition(e)} className="follow">
+                <a>
+                  ss
+                </a>
+              </div>
+              <div>
+                <a>
+                  <button>
+
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
           <div className="flex  w-xl">
             <h1>

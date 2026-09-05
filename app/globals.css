@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --x: 0.5;
+  --y: 0.5;
 }
 
 @theme inline {
@@ -68,8 +71,8 @@ main {
 }
 
 .main-text {
-  font-family: monospace; /* to change? */
-  font-size: 3.1rem;
+  font-family: "Geist"; /* to change? */
+  font-size: 3.7rem;
   font-weight: 600;
   background-image: linear-gradient(to left, #553c9a, #b393d3); /* to change */
   color: transparent;
@@ -79,4 +82,17 @@ main {
 
 .bottom-text {
   font-size: 1.02rem;
+}
+
+.follow {
+  position: absolute;
+  width: 100px;        /* ustal szerokość */
+  height: 40px;
+  background-color: red;
+  /* Lewa krawędź: procent szerokości kontenera minus połowa szerokości elementu */
+  left: calc(var(--x) * 100% - 50px);
+  /* Górna krawędź analogicznie */
+  top: calc(var(--y) * 100% - 20px);
+  pointer-events: none; /* nie blokuje zdarzeń myszy */
+  transition: left 0.1s ease-out, top 0.1s ease-out;
 }
