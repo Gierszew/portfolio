@@ -3,9 +3,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-
-  --x: 0.5;
-  --y: 0.5;
 }
 
 @theme inline {
@@ -86,13 +83,11 @@ main {
 
 .follow {
   position: absolute;
-  width: 100px;        /* ustal szerokość */
+  width: 100px;
   height: 40px;
   background-color: red;
-  /* Lewa krawędź: procent szerokości kontenera minus połowa szerokości elementu */
-  left: calc(var(--x) * 100% - 50px);
-  /* Górna krawędź analogicznie */
-  top: calc(var(--y) * 100% - 20px);
-  pointer-events: none; /* nie blokuje zdarzeń myszy */
+  pointer-events: none;
   transition: left 0.1s ease-out, top 0.1s ease-out;
+  left: 0;
+  top: 0;
 }

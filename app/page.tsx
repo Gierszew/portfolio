@@ -1,33 +1,14 @@
 "use client"
 
-import Image from "next/image";
 import { MouseEvent, useRef } from "react";
+import ProjectFollow from "./components/ProjectFollow";
+import Header from "./components/Header";
 
 export default function Home() {
-  const containerRef = useRef<HTMLDivElement>(null);
 
-  const followCursorPosition = function (e: MouseEvent) {
-    const container = containerRef.current;
-    console.log(container);
-    if (!container) return;
-
-    const rect = container.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width;
-    const y = (e.clientY - rect.top) / rect.height;
-
-    const clampedX = Math.min(1, Math.max(0, x));
-    const clampedY = Math.min(1, Math.max(0, y));
-
-    container.style.setProperty("--x", clampedX.toString());
-    container.style.setProperty("--y", clampedY.toString());
-
-    console.log(x);
-  }  
   return (
     <>
-      <header>
-        header
-      </header>
+      <Header />
       <main className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
         <div className="flex flex-row justify-center  w-screen">
           <div className="flex flex-col w-xl">
@@ -43,15 +24,12 @@ export default function Home() {
               I build full stack
               <em> applications </em> and
               <em> web applications </em>
-              
+
               that people use
             </p>
-            <div className="relative flex flex-row">
-              <div onMouseMove={(e) => followCursorPosition(e)} className="follow">
-                <a>
-                  ss
-                </a>
-              </div>
+            <div
+              className="relative flex flex-row">
+              <ProjectFollow />
               <div>
                 <a>
                   <button>
