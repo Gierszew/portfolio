@@ -38,15 +38,15 @@ export default function ProjectFollow() {
 
     return (
         <div
-            className="w-25 h-10"
+            className="w-30 h-11.25"
             onMouseMove={(e) => followCursorPosition(e)}
             onMouseLeave={(e) => backInPosition(e)}
             ref={containerRef}>
             <div
-                className="follow"
+                className="flex justify-center items-center follow"
                 ref={followRef}>
                 <a>
-                    ss
+                    My projects
                 </a>
             </div>
         </div>

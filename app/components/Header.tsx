@@ -5,7 +5,7 @@ export default function Header() {
         <header className="flex justify-center fixed w-100/100">
             <div className="flex w-6xl">
                 <nav className="w-1/4 flex justify-start left">
-                    <a href="#">Gierszew</a>
+                    <Link href="/">Gierszew</Link>
                 </nav>
                 <nav className="w-1/4 flex justify-around center">
                     <div className="flex justify-between">

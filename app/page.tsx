@@ -1,22 +1,26 @@
 "use client"
 
-import { MouseEvent, useRef } from "react";
+import { MouseEvent, useEffect, useRef, useState } from "react";
 import ProjectFollow from "./components/ProjectFollow";
 import Header from "./components/Header";
 
 export default function Home() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, [])
 
   return (
     <>
-      <Header />
-      <main className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
-        <div className="flex flex-row justify-center  w-screen">
+      <main className="flex flex-col flex-1 items-center justify-center font-sans">
+        <div className="flex flex-row justify-center w-screen">
           <div className="flex flex-col w-xl">
             <div className="flex">
               <div className="pulsating-circle"></div>
               <div>Available???</div>
             </div>
-            <h1 className="main-text">
+            <h1 className={`main-text ${visible? "visible" : ""}`}>
               <div>I love to create applications </div>
               <div>that people use</div>
             </h1>

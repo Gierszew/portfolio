@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: radial-gradient(circle at 50% 30%, #30343a 0%, #000 100%);
+  --foreground: #f4f4f5;
+  --secondary-color: #a1a1aa;
+  --primary-button: #3b82f6;
+  --primary-button-hover: #60a5fa;
+  --border-color: #3f3f46;
 }
 
 @theme inline {
@@ -14,8 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  
   }
 }
 
@@ -26,11 +29,7 @@ body {
 }
 
 main {
-  background: radial-gradient(
-    circle at 50% 30%,
-    #30343a 0%,
-    #000000 100%
-  )
+  background: var(--background);
 }
 
 .pulsating-circle {
@@ -51,7 +50,7 @@ main {
   width: 2em;     /* 1.5em + 2*0.25em = 2em */
   height: 2em;
   border-radius: 50%;
-  border: 2px solid #6ad945;
+  border: 1.5px solid #6ad945;
   box-sizing: border-box;
   animation: pulsating-ripple 2s ease-out infinite;
 }
@@ -68,26 +67,40 @@ main {
 }
 
 .main-text {
+  display: inline-block;
+  clip-path: inset(0 100% 0 0);
   font-family: "Geist"; /* to change? */
   font-size: 3.7rem;
   font-weight: 600;
-  background-image: linear-gradient(to left, #553c9a, #b393d3); /* to change */
-  color: transparent;
+  color: var(--foreground);
   background-clip: text;
   -webkit-background-clip: text;
+  transition: clip-path 1.2s ease-in;
+}
+
+.main-text.visible {
+  clip-path: inset(0 0 0 0);
 }
 
 .bottom-text {
   font-size: 1.02rem;
+  color: var(--secondary-color);
 }
 
 .follow {
   position: absolute;
-  width: 100px;
-  height: 40px;
-  background-color: red;
+  width: 120px;
+  height: 45px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--primary-button);
   pointer-events: none;
   transition: left 0.1s ease-out, top 0.1s ease-out;
+  margin-top: 15px;
   left: 0;
   top: 0;
+}
+
+.follow a {
+ 
 }
