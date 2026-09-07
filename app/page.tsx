@@ -39,7 +39,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex  w-xl">
+          <div className="flex w-xl">
             <h1>
               [dopamine]
             </h1>

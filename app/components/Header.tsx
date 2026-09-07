@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
     return (
         <header className="flex justify-center fixed w-100/100">
@@ -11,7 +13,7 @@ export default function Header() {
                             <p className="text-[12px]">1</p>
                         </div>
                         <div className="w-4/5">
-                            Projects
+                            <Link href="/projects">Projects</Link>
                         </div>
                     </div>
                     <div className="flex justify-between">
@@ -19,7 +21,7 @@ export default function Header() {
                             <p className="text-[12px]">2</p>
                         </div>
                         <div className="w-4/5">
-                            About
+                            <Link href="/about">About</Link>
                         </div>
                     </div>
                     <div className="flex justify-between">
@@ -27,7 +29,7 @@ export default function Header() {
                             <p className="text-[12px]">3</p>
                         </div>
                         <div className="w-4/5">
-                            Contact
+                            <Link href="/contact">Contact</Link>
                         </div>
                     </div>
                 </nav>
