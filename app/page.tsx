@@ -3,6 +3,7 @@
 import { MouseEvent, useEffect, useRef, useState } from "react";
 import ProjectFollow from "./components/ProjectFollow";
 import Header from "./components/Header";
+import Terminal from "./components/Terminal";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -30,6 +31,10 @@ export default function Home() {
               <em> web applications </em>
 
               that people use
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quidem vero, ratione repellendus cum veniam quas
+              amet veritatis. Accusantium culpa temporibus nemo tempora
+              quia vitae, non eveniet mollitia quam porro in.
             </p>
             <div
               className="relative flex flex-row">
@@ -44,9 +49,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex w-xl">
-            <h1>
-              [dopamine]
-            </h1>
+            <Terminal />
           </div>
         </div>
         <div className="">

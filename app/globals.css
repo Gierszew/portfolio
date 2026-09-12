@@ -104,3 +104,11 @@ main {
 .follow a {
  
 }
+
+.terminal-panel {
+  width: 100%;
+  height: 400px;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #7c3aed, #1e1b4b 40%, transparent 70%);
+  filter: blur(60px);
+  animation: float 8s ease-in-out infinite;
+}
