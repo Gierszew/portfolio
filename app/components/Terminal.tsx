@@ -75,6 +75,41 @@ export default function Terminal() {
                     <h3>~:bash</h3>
                 </div>
                 <div className="terminal-body">
+                    { renderedLines.map((line, i) => {
+                        const isPromptLine = line.startsWith("$");
+                        return (
+                            <p key={i}>
+                                {
+                                    isPromptLine? (
+                                        <>
+                                            <span className="prompt">$</span>
+                                            <span>{line.slice(1)}</span>
+                                        </>
+                                    ) : (
+                                        <span style={{ color: LINES[i]?.color }}>
+                                            {line}
+                                        </span>
+                                    )
+                                }
+                            </p>
+                        );
+                    })}
+
+                    { lineIndex < LINES.length && (
+                        <p>
+                            { activePrompt && <span className="prompt">{activePrompt}</span> }
+                            <span style={{ color: activeColor }}>{ currentLine.replace(/^\$/, "") }</span>
+                            <span className="cursor" />
+                        </p>
+                    )}
+                    {
+                        lineIndex >= LINES.length && (
+                            <p>
+                                <span className="prompt">$</span>
+                                <span className="cursor" />
+                            </p>
+                        )
+                    }
                     
                 </div>
             </div>

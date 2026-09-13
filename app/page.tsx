@@ -15,12 +15,8 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col flex-1 items-center justify-center font-sans">
-        <div className="flex flex-row justify-center w-screen">
+        <div className="container flex flex-row justify-center w-screen">
           <div className="flex flex-col w-xl">
-            <div className="flex">
-              <div className="pulsating-circle"></div>
-              <div>Available???</div>
-            </div>
             <h1 className={`main-text ${visible? "visible" : ""}`}>
               <div>I love to create applications </div>
               <div>that people use</div>

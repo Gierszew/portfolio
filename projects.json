@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "title": "Website",
+            "description": "So yeah this is my website :D very exciting to be here!",
+            "image": "/projects-images/project1.png",
+            "imageAlt": "Website image (this website)",
+            "tags": [
+                "yolo", "react", "typescript", "tailwind"
+            ],
+            "liveUrl": "wtf is this",
+            "repoUrl": "WIP",
+            "year": "2026",
+            "index": "0",
+            "reverse": false
+        }
+    ]
+}
