@@ -15,7 +15,6 @@ export default function Home() {
 
   return (
     <main className="flex flex-col flex-1 font-sans">
-      {/* HERO – własna sekcja z centrowaniem i min-h-screen */}
       <section className="relative flex min-h-screen w-full items-center justify-center px-6 pt-32 pb-20">
         
         <div className="container mx-auto flex w-full max-w-6xl flex-col md:flex-row items-center gap-12">
@@ -41,7 +40,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STACK */}
       <section className="w-full py-16 border-y border-white/5">
         <div className="mx-auto max-w-6xl px-6">
           <p className="mb-6 text-center font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
@@ -55,7 +53,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
       <section className="w-full py-24">
         <div className="mx-auto flex max-w-6xl flex-col md:flex-row gap-12 px-6 items-center">
           <div className="md:w-1/3">
@@ -94,7 +91,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CAPABILITIES */}
       <section className="w-full py-24 border-y border-white/5">
         <div className="mx-auto max-w-6xl px-6">
           <span className="font-mono text-xs text-green-400">03. Trust me with these</span>
@@ -117,7 +113,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CURRENTLY */}
       <section className="w-full py-24">
         <div className="mx-auto max-w-3xl px-6 font-mono text-sm">
           <span className="text-green-400">$</span> cat currently.txt
@@ -129,7 +124,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
       <section className="w-full py-32">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <span className="font-mono text-xs text-green-400">04. Let's keep in touch</span>
@@ -148,7 +142,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
     </main>
   );
 }

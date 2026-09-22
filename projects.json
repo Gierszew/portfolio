@@ -27,6 +27,34 @@
             "year": "2025",
             "index": "1",
             "reverse": true
+        },
+        {
+            "title": "Course Project v2",
+            "description": "Game written in C++ with SDL2 library (I have weird dejavu feeling...). The goal is to defeat all ninjas. The game has 2 levels",
+            "image": "/projects-images/project3.png",
+            "imageAlt": "Game image (different game)",
+            "tags": [
+                "C++", "low-level programming", "Game development"
+            ],
+            "liveUrl": "no",
+            "repoUrl": "WIP",
+            "year": "2025",
+            "index": "2",
+            "reverse": false
+        },
+        {
+            "title": "Side project - Cheap Messenger",
+            "description": "Maybe it's not the same as Messenger, but it does it's job. You could type with your friends, create posts and everything else like on Messenger! I am not second Mark Zuckerberg only because it's not public trust me.",
+            "image": "/projects-images/project4.png",
+            "imageAlt": "Website image (not this website!)",
+            "tags": [
+                "Vue", "Express.js", "CSS", "Full-stack development", "SQL"
+            ],
+            "liveUrl": "no",
+            "repoUrl": "WIP",
+            "year": "2024",
+            "index": "3",
+            "reverse": true
         }
     ]
 }
