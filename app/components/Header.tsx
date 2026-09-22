@@ -86,7 +86,7 @@ export default function Header() {
           </span>
 
           <a
-            href="mailto:hi@gierszew.dev"
+            href=""
             className="hidden sm:inline-flex rounded-full border border-green-400/30 bg-green-400/10 px-3 py-1.5 text-green-300 transition-all hover:border-green-400/60 hover:bg-green-400/20 hover:shadow-[0_0_20px_-4px_#4ade80]"
           >
             get in touch

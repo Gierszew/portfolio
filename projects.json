@@ -13,6 +13,20 @@
             "year": "2026",
             "index": "0",
             "reverse": false
+        },
+        {
+            "title": "Course Project",
+            "description": "Game written in C with curses library. The goal is to get stars and to not get hit by hunters.",
+            "image": "/projects-images/project2.png",
+            "imageAlt": "Game image",
+            "tags": [
+                "C", "low-level programming"
+            ],
+            "liveUrl": "no",
+            "repoUrl": "WIP",
+            "year": "2025",
+            "index": "1",
+            "reverse": true
         }
     ]
 }
