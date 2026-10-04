@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRef, MouseEvent } from "react";
 
 export default function ProjectFollow() {
@@ -45,9 +46,9 @@ export default function ProjectFollow() {
             <div
                 className="flex justify-center items-center follow"
                 ref={followRef}>
-                <a>
+                <Link href="/projects">
                     My projects
-                </a>
+                </Link>
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
 import Project from "../components/Project";
 import projects from "../../projects.json";
-import Footer from "../components/Footer";
 
 export default function Projects() {
     const myProjects = projects.projects;

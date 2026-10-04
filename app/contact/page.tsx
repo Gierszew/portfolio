@@ -19,31 +19,16 @@ export default function ContactPage() {
     {
       label: "LinkedIn",
       value: "in/gierszew",
-      href: "https://linkedin.com/in/gierszew",
+      href: "https://www.linkedin.com/in/wiktor-gierszewski-3a6753429/",
       desc: "For professional stuff. And recommendations.",
       tag: "03",
     },
     {
-      label: "X / Twitter",
+      label: "Discord",
       value: "@gierszew",
-      href: "https://x.com/gierszew",
-      desc: "Occasional thoughts about code.",
+      href: "https://discord.com/users/364038019742695424",
+      desc: "Second best way to contact me.",
       tag: "04",
-    },
-  ];
-
-  const faq = [
-    {
-      q: "Are you available for freelance?",
-      a: "Yes - small to medium projects. Send me a brief with scope and timeline.",
-    },
-    {
-      q: "Are you looking for an internship?",
-      a: "Absolutely. Summer 2025, frontend or full-stack. Remote or Tricity area.",
-    },
-    {
-      q: "Do you want to collaborate on a side project?",
-      a: "Always open to cool ideas. Shoot me a DM or email with what you're building.",
     },
   ];
 
@@ -84,7 +69,7 @@ export default function ContactPage() {
                 href={c.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex flex-col rounded-xl border border-white/10 bg-white/[0.02] p-6 transition-all hover:border-green-400/30 hover:bg-white/[0.04] hover:shadow-[0_0_40px_-20px_#4ade80]"
+                className="group relative flex flex-col rounded-xl border border-white/10 bg-white/2 p-6 transition-all hover:border-green-400/30 hover:bg-white/4 hover:shadow-[0_0_40px_-20px_#4ade80]"
               >
                 <div className="flex items-baseline justify-between">
                   <span className="font-mono text-xs text-green-400/70">
@@ -103,66 +88,19 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="w-full px-6 mt-32 pt-16 border-t border-white/5">
-        <div className="mx-auto max-w-3xl font-mono text-sm">
-          <span className="text-green-400">$</span> echo "prefer a direct line?"
-          <div className="mt-8 rounded-xl border border-white/10 bg-black/40 p-6 backdrop-blur-sm">
-            <p className="text-zinc-400 leading-relaxed">
-              Skip the form. Just send me an email directly - I read everything,
-              even the weird ones.
-            </p>
-            <a
-              href=""
-              className="mt-6 inline-flex rounded-full border border-green-400/30 bg-green-400/10 px-5 py-2.5 text-green-300 transition-all hover:border-green-400/60 hover:bg-green-400/20 hover:shadow-[0_0_30px_-6px_#4ade80]"
-            >
-              hi@gierszew.dev →
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="w-full px-6 mt-32 pt-16 border-t border-white/5">
-        <div className="mx-auto max-w-3xl">
-          <span className="font-mono text-xs text-green-400">03. FAQ</span>
-          <h2 className="mt-2 mb-12 font-mono text-2xl md:text-3xl text-zinc-100">
-            Before you ask
-          </h2>
-
-          <div className="space-y-4">
-            {faq.map((item, i) => (
-              <details
-                key={i}
-                className="group rounded-xl border border-white/10 bg-white/2 p-5 transition-all open:border-green-400/20 open:bg-white/[0.04]"
-              >
-                <summary className="flex cursor-pointer items-center justify-between font-mono text-sm text-zinc-200 marker:content-none">
-                  <span>{item.q}</span>
-                  <span className="text-green-400 transition-transform duration-300 group-open:rotate-45">
-                    +
-                  </span>
-                </summary>
-                <p className="mt-4 text-sm text-zinc-400 leading-relaxed">
-                  {item.a}
-                </p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="w-full px-6 mt-32">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-mono text-3xl md:text-4xl text-zinc-100">
             Or just say hi<span className="text-green-400">.</span>
           </h2>
           <p className="mt-4 text-zinc-400">
-            Really. I don't bite. Worst case - you get a delayed reply.
+            Really. I don't bite.
           </p>
           <a
-            href=""
+            href="mailto:giewik00@gmail.com"
             className="mt-8 inline-flex rounded-full border border-green-400/30 bg-green-400/10 px-6 py-3 font-mono text-sm text-green-300 transition-all hover:border-green-400/60 hover:bg-green-400/20 hover:shadow-[0_0_30px_-6px_#4ade80]"
           >
-            hi@gierszew.dev →
+            Hi Gierszew →
           </a>
         </div>
       </section>

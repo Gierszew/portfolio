@@ -10,7 +10,7 @@ type ProjectProps = {
   liveUrl?: string;
   repoUrl?: string;
   year?: string;
-  index?: string;      // np. "01"
+  index?: string;
   reverse?: boolean;   // true = obrazek po prawej
 };
 
@@ -32,7 +32,6 @@ export default function Project({
         reverse ? "md:[&>*:first-child]:order-2" : ""
       }`}
     >
-      {/* Obrazek */}
       <div className="relative aspect-4/3 w-full overflow-hidden rounded-xl border border-white/10 bg-zinc-900/60 backdrop-blur-sm transition-all duration-500 group-hover:border-green-400/30 group-hover:shadow-[0_0_40px_-12px_#4ade80]">
         <Image
           src={image}
@@ -41,7 +40,6 @@ export default function Project({
           sizes="(max-width: 768px) 100vw, 50vw"
           className={image == "/projects-images/project4.png" ? "" : "object-cover transition-transform duration-700 group-hover:scale-105"}
         />
-        {/* Overlay z numerem projektu */}
         {index && (
           <span className="absolute left-4 top-4 font-mono text-xs text-green-400/80">
             {index}.
@@ -49,7 +47,6 @@ export default function Project({
         )}
       </div>
 
-      {/* Treść */}
       <div className="flex flex-col justify-center">
         {year && (
           <span className="font-mono text-xs uppercase tracking-widest text-zinc-500">
@@ -65,7 +62,6 @@ export default function Project({
           {description}
         </p>
 
-        {/* Tagi */}
         <ul className="mt-6 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <li
@@ -77,7 +73,6 @@ export default function Project({
           ))}
         </ul>
 
-        {/* Linki */}
         {(liveUrl || repoUrl) && (
           <div className="mt-8 flex items-center gap-5 font-mono text-xs">
             {liveUrl && (

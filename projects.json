@@ -6,9 +6,9 @@
             "image": "/projects-images/project1.png",
             "imageAlt": "Website image (this website)",
             "tags": [
-                "yolo", "react", "typescript", "tailwind"
+                "react", "typescript", "tailwind"
             ],
-            "liveUrl": "wtf is this",
+            "liveUrl": "https://gierszew.xyz",
             "repoUrl": "WIP",
             "year": "2026",
             "index": "0",
@@ -22,7 +22,6 @@
             "tags": [
                 "C", "low-level programming"
             ],
-            "liveUrl": "no",
             "repoUrl": "WIP",
             "year": "2025",
             "index": "1",
@@ -36,7 +35,6 @@
             "tags": [
                 "C++", "low-level programming", "Game development"
             ],
-            "liveUrl": "no",
             "repoUrl": "WIP",
             "year": "2025",
             "index": "2",
@@ -50,10 +48,37 @@
             "tags": [
                 "Vue", "Express.js", "CSS", "Full-stack development", "SQL"
             ],
-            "liveUrl": "no",
             "repoUrl": "WIP",
             "year": "2024",
             "index": "3",
+            "reverse": true
+        },
+        {
+            "title": "Side project - Todo App",
+            "description": "Very minimalistic app to make list of things to do.",
+            "image": "/projects-images/project5.png",
+            "imageAlt": "Todo website image",
+            "tags": [
+                "react", "CSS", "PostgresSQL", "Firebase", "typescript"
+            ],
+            "liveUrl": "https://todo-app-ten-delta-84.vercel.app/",
+            "repoUrl": "WIP",
+            "year": "2026",
+            "index": "4",
+            "reverse": false
+        },
+        {
+            "title": "Side project - Pyramid builder",
+            "description": "Fun website to build your own pyramid. Be careful with amount of blocks though.",
+            "image": "/projects-images/project6.png",
+            "imageAlt": "Pyramid website (not real pyramid)",
+            "tags": [
+                "react", "framer motion", "typescript", "CSS"
+            ],
+            "liveUrl": "https://pyramid-builder-gold.vercel.app/",
+            "repoUrl": "WIP",
+            "year": "2026",
+            "index": "5",
             "reverse": true
         }
     ]

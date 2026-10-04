@@ -33,21 +33,21 @@ main {
 }
 
 .pulsating-circle {
-  /* Główna kropka – statyczna */
+
   width: 1.5em;
   height: 1.5em;
   background-image: radial-gradient(circle, #6ad945, #4ad945 66%, transparent 66%);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  position: relative; /* potrzebne do pozycjonowania pseudo-elementu */
-  border-radius: 50%; /* dla bezpieczeństwa – okrąg */
+  position: relative;
+  border-radius: 50%;
 }
 
 .pulsating-circle::before {
   content: "";
   position: absolute;
-  top: -0.25em;   /* dopasuj, aby pierścień był większy od kropki */
+  top: -0.25em;
   left: -0.25em;
-  width: 2em;     /* 1.5em + 2*0.25em = 2em */
+  width: 2em;
   height: 2em;
   border-radius: 50%;
   border: 1.5px solid #6ad945;
@@ -102,7 +102,7 @@ main {
 }
 
 .follow a {
- 
+  pointer-events: auto;
 }
 
 .terminal {
@@ -165,7 +165,7 @@ main {
 }
 
 .prompt {
-  color: #4ade80;   /* zielony – pasuje do pulsującego kółka */
+  color: #4ade80;
   margin-right: 0.5rem;
   user-select: none;
 }

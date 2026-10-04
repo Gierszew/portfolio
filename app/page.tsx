@@ -4,10 +4,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ProjectFollow from "./components/ProjectFollow";
 import Terminal from "./components/Terminal";
-import Footer from "./components/Footer";
+import projects from "../projects.json";
+import ProjectMini from "./components/ProjectMini";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
+
+  const myProjects = projects.projects;
 
   useEffect(() => {
     setVisible(true);
@@ -27,7 +30,7 @@ export default function Home() {
               I build full stack
               <em> applications </em> and
               <em> web applications </em>
-              that people use. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              that people use. 
             </p>
             <div className="relative mt-10 flex flex-row">
               <ProjectFollow />
@@ -55,39 +58,43 @@ export default function Home() {
 
       <section className="w-full py-24">
         <div className="mx-auto flex max-w-6xl flex-col md:flex-row gap-12 px-6 items-center">
-          <div className="md:w-1/3">
-            <div className="aspect-square w-full rounded-xl border border-white/10 bg-zinc-900" />
-          </div>
           <div className="md:w-2/3">
             <span className="font-mono text-xs text-green-400">01. Hello World!</span>
             <h2 className="mt-2 font-mono text-2xl md:text-3xl text-zinc-100">
               A bit about me
             </h2>
             <p className="mt-4 text-zinc-400 leading-relaxed">
-              2nd year CS student at Gdańsk Tech. I got into coding because...
-            </p>
-            <p className="mt-4 text-zinc-400 leading-relaxed">
-              Outside of code I'm into...
+              2nd year CS student at Gdańsk University of Technology. I got into coding, because I like to interact somehow with another person. Someone would say that I could be psychologist or someone who really can interact with someone. But I like this type of interaction that I can create virtual world for another person and interact with them within it.
             </p>
           </div>
         </div>
       </section>
 
-      {/* PROJECTS */}
       <section className="w-full py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex items-baseline justify-between mb-12">
             <div>
               <span className="font-mono text-xs text-green-400">02. My amazing projects</span>
-              <h2 className="mt-2 font-mono text-2xl md:text-3xl text-zinc-100">
-                Selected projects
-              </h2>
             </div>
             <Link href="/projects" className="font-mono text-xs text-zinc-400 hover:text-green-300 transition-colors">
               all projects →
             </Link>
           </div>
-          {/* tutaj mapujesz <Project /> */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {myProjects.map((project) => (
+                <ProjectMini
+                  key={project.index}
+                  index={project.index}
+                  year={project.year}
+                  title={project.title}
+                  image={project.image}
+                  imageAlt={project.imageAlt}
+                  tags={project.tags}
+                  liveUrl={project.liveUrl}
+                  repoUrl={project.repoUrl}
+                />
+              ))}
+            </div>
         </div>
       </section>
 
@@ -99,28 +106,17 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Frontend", desc: "React, Next.js, TypeScript, Tailwind", icon: "◆" },
-              { title: "Backend",  desc: "Node.js, PostgreSQL, REST APIs",     icon: "◇" },
-              { title: "Tooling",  desc: "Git, Docker, Vercel, CI/CD",          icon: "◈" },
+              { title: "Frontend", desc: "React, Next.js, TypeScript, Tailwind, React Native", icon: "◆" },
+              { title: "Backend",  desc: "Node.js, PostgreSQL, REST APIs",     icon: "◈" },
+              { title: "Tooling",  desc: "Git, Docker, Vercel, CI/CD",          icon: "◇" },
             ].map((s) => (
-              <div key={s.title} className="group rounded-xl border border-white/10 bg-white/[0.02] p-6 transition-all hover:border-green-400/30 hover:bg-white/[0.04]">
+              <div key={s.title} className="group rounded-xl border border-white/10 bg-white/2 p-6 transition-all hover:border-green-400/30 hover:bg-white/4">
                 <span className="text-green-400 text-xl">{s.icon}</span>
                 <h3 className="mt-4 font-mono text-lg text-zinc-100">{s.title}</h3>
                 <p className="mt-2 text-sm text-zinc-400">{s.desc}</p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="w-full py-24">
-        <div className="mx-auto max-w-3xl px-6 font-mono text-sm">
-          <span className="text-green-400">$</span> cat currently.txt
-          <ul className="mt-6 space-y-3 text-zinc-400">
-            <li>→ Building my portfolio in Next.js & Tailwind</li>
-            <li>→ Learning Rust & systems programming</li>
-            <li>→ Open to internships for summer 2025</li>
-          </ul>
         </div>
       </section>
 
@@ -134,10 +130,10 @@ export default function Home() {
             Currently open to internships, freelance and collaboration.
           </p>
           <a
-            href=""
+            href="mailto:giewik00@gmail.com"
             className="mt-8 inline-flex rounded-full border border-green-400/30 bg-green-400/10 px-6 py-3 font-mono text-sm text-green-300 transition-all hover:border-green-400/60 hover:bg-green-400/20 hover:shadow-[0_0_30px_-6px_#4ade80]"
           >
-            hi@gierszew.dev →
+            mail me →
           </a>
         </div>
       </section>
