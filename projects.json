@@ -16,7 +16,7 @@
         },
         {
             "title": "Course Project",
-            "description": "Game written in C with curses library. The goal is to get stars and to not get hit by hunters.",
+            "description": "Game written in C with curses library. The goal is to get stars and avoid getting hit by hunters.",
             "image": "/projects-images/project2.png",
             "imageAlt": "Game image",
             "tags": [
@@ -42,7 +42,7 @@
         },
         {
             "title": "Side project - Cheap Messenger",
-            "description": "Maybe it's not the same as Messenger, but it does it's job. You could type with your friends, create posts and everything else like on Messenger! I am not second Mark Zuckerberg only because it's not public trust me.",
+            "description": "Maybe it's not the same as Messenger, but it gets the job done. You could type with your friends, create posts and everything that Messenger offers! I may not be the second coming of Zuckerberg, but it's damn good.",
             "image": "/projects-images/project4.png",
             "imageAlt": "Website image (not this website!)",
             "tags": [
@@ -55,7 +55,7 @@
         },
         {
             "title": "Side project - Todo App",
-            "description": "Very minimalistic app to make list of things to do.",
+            "description": "Very minimalistic app to make lists.",
             "image": "/projects-images/project5.png",
             "imageAlt": "Todo website image",
             "tags": [
@@ -69,7 +69,7 @@
         },
         {
             "title": "Side project - Pyramid builder",
-            "description": "Fun website to build your own pyramid. Be careful with amount of blocks though.",
+            "description": "Fun website to build your own pyramid. Be careful with amount of blocks though there is NO limit.",
             "image": "/projects-images/project6.png",
             "imageAlt": "Pyramid website (not real pyramid)",
             "tags": [

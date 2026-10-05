@@ -64,7 +64,9 @@ export default function Home() {
               A bit about me
             </h2>
             <p className="mt-4 text-zinc-400 leading-relaxed">
-              2nd year CS student at Gdańsk University of Technology. I got into coding, because I like to interact somehow with another person. Someone would say that I could be psychologist or someone who really can interact with someone. But I like this type of interaction that I can create virtual world for another person and interact with them within it.
+              2nd year Computer Science student at Gdańsk University of Technology. I got into coding, because I like to interact in any way, shape or form with people.
+              Some would say that I could be a psychologist or someone who can really interact with others. 
+              But I like this type of interaction in which I can create virtual worlds for another person and interact with them from within.
             </p>
           </div>
         </div>
@@ -102,7 +104,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <span className="font-mono text-xs text-green-400">03. Trust me with these</span>
           <h2 className="mt-2 mb-12 font-mono text-2xl md:text-3xl text-zinc-100">
-            What I do
+            My expertise
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -127,7 +129,7 @@ export default function Home() {
             Let's build something together
           </h2>
           <p className="mt-4 text-zinc-400">
-            Currently open to internships, freelance and collaboration.
+            Open to internships, freelance and collaboration.
           </p>
           <a
             href="mailto:giewik00@gmail.com"

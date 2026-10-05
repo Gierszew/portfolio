@@ -25,7 +25,7 @@ export default function AboutPage() {
             Hey, I'm Wiktor<span className="text-green-400">.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-zinc-400 leading-relaxed">
-            Full-stack developer and 2nd year CS student at Gdańsk University of Technology.
+            Full-stack developer and 2nd year Computer Science student at Gdańsk University of Technology.
             I build things for the web - from small experiments to full-blown apps.
             Currently I am learning OpenGL for graphics development.
           </p>
