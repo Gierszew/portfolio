@@ -6,6 +6,7 @@ import ProjectFollow from "./components/ProjectFollow";
 import Terminal from "./components/Terminal";
 import projects from "../projects.json";
 import ProjectMini from "./components/ProjectMini";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -140,6 +141,7 @@ export default function Home() {
         </div>
       </section>
 
+      <Analytics />
     </main>
   );
 }
