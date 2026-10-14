@@ -9,7 +9,7 @@
                 "react", "typescript", "tailwind"
             ],
             "liveUrl": "https://gierszew.xyz",
-            "repoUrl": "WIP",
+            "repoUrl": "https://github.com/Gierszew/portfolio",
             "year": "2026",
             "index": "0",
             "reverse": false
@@ -22,20 +22,20 @@
             "tags": [
                 "C", "low-level programming"
             ],
-            "repoUrl": "WIP",
+            "repoUrl": "https://github.com/Gierszew/swallow-stars",
             "year": "2025",
             "index": "1",
             "reverse": true
         },
         {
             "title": "Course Project v2",
-            "description": "Game written in C++ with SDL2 library (I have weird dejavu feeling...). The goal is to defeat all ninjas. The game has 2 levels",
+            "description": "Game written in C++ with SDL2 library. The goal is to defeat all ninjas. The game has 2 levels",
             "image": "/projects-images/project3.png",
             "imageAlt": "Game image (different game)",
             "tags": [
                 "C++", "low-level programming", "Game development"
             ],
-            "repoUrl": "WIP",
+            "repoUrl": "https://github.com/Gierszew/beatemup",
             "year": "2025",
             "index": "2",
             "reverse": false
@@ -48,7 +48,7 @@
             "tags": [
                 "Vue", "Express.js", "CSS", "Full-stack development", "SQL"
             ],
-            "repoUrl": "WIP",
+            "repoUrl": "https://github.com/Gierszew/messenger-project",
             "year": "2024",
             "index": "3",
             "reverse": true
@@ -62,7 +62,7 @@
                 "react", "CSS", "PostgresSQL", "Firebase", "typescript"
             ],
             "liveUrl": "https://todo-app-ten-delta-84.vercel.app/",
-            "repoUrl": "WIP",
+            "repoUrl": "https://github.com/Gierszew/todo-app",
             "year": "2026",
             "index": "4",
             "reverse": false
@@ -76,7 +76,7 @@
                 "react", "framer motion", "typescript", "CSS"
             ],
             "liveUrl": "https://pyramid-builder-gold.vercel.app/",
-            "repoUrl": "WIP",
+            "repoUrl": "https://github.com/Gierszew/Pyramid-Builder",
             "year": "2026",
             "index": "5",
             "reverse": true

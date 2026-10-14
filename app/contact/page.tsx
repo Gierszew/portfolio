@@ -4,8 +4,8 @@ export default function ContactPage() {
   const channels = [
     {
       label: "Email",
-      value: "hi@gierszew.dev",
-      href: "mailto:hi@gierszew.dev",
+      value: "mail me",
+      href: "mailto:giewik00@gmail.com",
       desc: "Best way to reach me. I reply within 24h.",
       tag: "01",
     },

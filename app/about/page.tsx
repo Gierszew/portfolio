@@ -10,10 +10,11 @@ export default function AboutPage() {
   ];
 
   const skills = [
-    { group: "Languages",   items: ["TypeScript", "JavaScript", "Python", "C++"] },
-    { group: "Frontend",    items: ["React", "Next.js", "Tailwind"] },
-    { group: "Backend",     items: ["Node.js", "PostgreSQL", "REST", "MySQL", "Express.js"] },
-    { group: "Tools",       items: ["Git", "Docker", "Vercel", "Linux"] },
+    { group: "Languages",               items: ["TypeScript", "JavaScript", "Python", "C++"] },
+    { group: "Frontend",                items: ["React", "Next.js", "Tailwind"] },
+    { group: "Backend",                 items: ["Node.js", "PostgreSQL", "REST", "MySQL", "Express.js"] },
+    { group: "Tools",                   items: ["Git", "Docker", "Vercel", "Linux"] },
+    { group: "Graphics Programming",    items: ["C++", "OpenGL"]}
   ];
 
   return (

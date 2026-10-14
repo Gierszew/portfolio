@@ -7,6 +7,7 @@ import Terminal from "./components/Terminal";
 import projects from "../projects.json";
 import ProjectMini from "./components/ProjectMini";
 import { Analytics } from "@vercel/analytics/next";
+import { title } from "process";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -112,6 +113,7 @@ export default function Home() {
               { title: "Frontend", desc: "React, Next.js, TypeScript, Tailwind, React Native", icon: "◆" },
               { title: "Backend",  desc: "Node.js, PostgreSQL, REST APIs",     icon: "◈" },
               { title: "Tooling",  desc: "Git, Docker, Vercel, CI/CD",          icon: "◇" },
+              { title: "Graphics Programmer", desc: "C++, OpenGL", icon: "◈" }
             ].map((s) => (
               <div key={s.title} className="group rounded-xl border border-white/10 bg-white/2 p-6 transition-all hover:border-green-400/30 hover:bg-white/4">
                 <span className="text-green-400 text-xl">{s.icon}</span>
